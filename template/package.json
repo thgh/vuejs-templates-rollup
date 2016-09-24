@@ -6,12 +6,9 @@
   "private": true,
   {{/private}}
   "scripts": {
-    "watch": "rollup -cw",
-    "serve": "http-server -s -c 1 -a localhost -p 10001",
-    "browse": "http-server -s -c 1 -a localhost -p 10001 -o",
-    "dev": "run-p watch serve",
-    "open": "run-p watch browse",
-    "build": "cross-env NODE_ENV=production rollup -c"
+    "build": "cross-env NODE_ENV=production rollup -c",
+    "dev": "cross-env NODE_ENV=development rollup -cw",
+    "watch": "rollup -cw"
   },
   "dependencies": {
     "vue": "^2.0.0-rc.7"

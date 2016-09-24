@@ -16,13 +16,17 @@ npm run dev
 
 ### What's Included
 
-- `npm run dev`: Rollup
+- `npm run dev`
+  - watch for source changes
+  - [livereload](https://github.com/thgh/rollup-plugin-livereload) on bundle change
+  - [serve](https://github.com/thgh/rollup-plugin-serve) on local dev server
 
-- `npm run watch`: Rollup and rebuild on change
+- `npm run watch`
+  - watch for source changes
 
-- `npm run serve`: Serve the project on localhost:8080
-
-- `npm run build`: Production build with HTML/CSS/JS minification.
+- `npm run build`
+  - Production build with HTML/CSS/JS minification.
+  - extract [css](https://github.com/thgh/rollup-plugin-css-only)
 
 
 ### Fork It And Make Your Own
