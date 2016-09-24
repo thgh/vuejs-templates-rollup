@@ -4,6 +4,7 @@ import buble from 'rollup-plugin-buble'
 import nodeResolve from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
 import uglify from 'rollup-plugin-uglify'
+import livereload from 'rollup-plugin-livereload'
 
 const plugins = [
   vue(),
@@ -17,6 +18,8 @@ const plugins = [
 
 if (process.env.NODE_ENV === 'production') {
   plugins.push(uglify())
+} else {
+  plugins.push(livereload())
 }
 
 export default {
