@@ -18,12 +18,12 @@
     "rollup": "^0.36.0",
     "rollup-plugin-buble": "^0.14.0",
     "rollup-plugin-commonjs": "^5.0.4",
-    "rollup-plugin-css-only": "^0.0.2",
-    "rollup-plugin-livereload": "^0.0.2",
+    "rollup-plugin-css-only": "^0.0.3",
+    "rollup-plugin-livereload": "^0.0.3",
     "rollup-plugin-node-resolve": "^2.0.0",
     "rollup-plugin-serve": "^0.0.1",
     "rollup-plugin-uglify": "^1.0.1",
-    "rollup-plugin-vue2": "^0.0.7",
+    "rollup-plugin-vue2": "^0.0.8",
     "rollup-watch": "^2.5.0"
   }
 }
