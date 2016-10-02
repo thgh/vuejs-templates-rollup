@@ -1,5 +1,5 @@
 import vue from 'rollup-plugin-vue2'
-import css from 'rollup-plugin-css-only'
+import scss from 'rollup-plugin-scss'
 import buble from 'rollup-plugin-buble'
 import nodeResolve from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
@@ -9,7 +9,7 @@ import serve from 'rollup-plugin-serve'
 
 const plugins = [
   vue(),
-  css(),
+  scss(),
   buble({ exclude: 'node_modules/**' }),
   nodeResolve({ browser: true, jsnext: true }),
   commonjs()
@@ -30,5 +30,6 @@ if (process.env.NODE_ENV === 'development') {
 export default {
   entry: 'src/main.js',
   dest: 'dist/build.js',
+  sourceMap: true,
   plugins
 }
