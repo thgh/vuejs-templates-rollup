@@ -2,9 +2,6 @@
   "name": "{{ name }}",
   "description": "{{ description }}",
   "author": "{{ author }}",
-  {{#private}}
-  "private": true,
-  {{/private}}
   "scripts": {
     "build": "cross-env NODE_ENV=production rollup -c",
     "dev": "cross-env NODE_ENV=development rollup -cw",
