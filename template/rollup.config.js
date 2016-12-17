@@ -22,7 +22,6 @@ if (process.env.NODE_ENV === 'production') {
 if (process.env.NODE_ENV === 'development') {
   plugins.push(livereload())
   plugins.push(serve({
-    contentBase: 'dist/',
     open: true
   }))
 }
